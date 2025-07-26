@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivenes.css">
+</head>
+<body>
+   <section class="hero-section" id="home">
+    <nav>
+        <p class="logo">ROC<span>K</span></p>
+        <ul class="nav-links menu-open ">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#explore">explore</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+        <div class="humberger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <div class="hero-content">
+         <h2>WELCOME ROCKLAND TECHNOLOGY FOR THE FUTURE</h2>
+    </div>
+   </section>
+   <section class="explore-section" id="explore">
+    <div class="header">
+        <h2>explore popular services</h2>
+        <div class="line"></div>
+    </div>
+    <div class="gallery">
+        <div class="gallery-iterm">
+            <img src="Ai.png" alt="">
+            <div class="overlay">
+                <h3>Machine learning</h3>
+            </div>
+        </div>
+        <div class="gallery-iterm">
+            <img src="web.png" alt="">
+            <div class="overlay">
+                <h3>Web developers</h3>
+            </div>
+        </div><div class="gallery-iterm">
+            <img src="network.png" alt="">
+            <div class="overlay">
+                <h3>Networking </h3>
+            </div>
+        </div>
+    </div>
+   </section>
+<section class="about-section" id="about">
+    <div class="about-container">
+        <div class="header">
+            <h2 style="color: white;">about us</h2>
+            <div class="line"></div>
+        </div>
+        <div class="about-details">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                asasasa
+                Ipsam rem consequuntur, pariatur ducimus nostrum porro.
+                 sasa
+                 consequatur nam nobis est distinctio atque
+                 hhh
+                 officia dolore expedita quam ea a hic sint nulla.
+            </p>
+            <a href="#" class="cta-button">
+                <span>learn more</span>
+            </a>
+            
+        </div>
+    </div>
+</section>
+ <section class="contact-section" id="contact">
+    <div class="header">
+        <h2>communicate with us through ->> </h2>
+        <div class="line"></div>
+        <div class="contact-container">
+            <form class="form-container">
+                 <div class="input-container">
+                    <input type="text" placeholder="your email">
+                 </div>
+                 <div class="input-container">
+                    <textarea placeholder="your message"></textarea>
+                 </div>
+                 <div class="button-container">
+                    <button class="cta-button">send message</button>
+                 </div>
+            </form>
+            <div class="contact-details">
+               <div class="info">
+                <h3>address</h3>
+                <p>p.o.box 220 da-es-salaam</p>
+               </div>
+               <div class="info">
+                <h3>email</h3>
+                <p>Samsonmwangonda205@gmail.com</p>
+               </div>
+               <div class="info">
+                <h3>phone</h3>
+                <p>+255748681151</p>
+               </div>
+               <div class="social-icons">
+                <a href=""><img src="instagram.png" alt=""></a>
+                <a href=""><img src="github.png" alt=""></a>
+                <a href=""><img src="linkedin.png" alt=""></a>
+                <a href=""><img src="twitter.png " alt=""></a>
+               </div>
+            </div>
+        </div> 
+    </div>
+ </section>
+<footer>
+    <p>&copy; 2025 Rocklandtech.com</p>
+</footer>
+   <script>
+    const menubtn =document.querySelector(".humberger-menu")
+    const links = document.querySelector(".nav-links");
+
+    menubtn.addEventListener("click",openMenu);
+
+    function openMenu(){
+        links.classList.toggle("menu-open")
+    }
+   </script>
+</body>
+</html>
